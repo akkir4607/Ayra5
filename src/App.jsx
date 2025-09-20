@@ -9,7 +9,7 @@ import Home from './pages/Home';
 import Products from './pages/Products';
 import ProductDetail from './pages/ProductDetail';
 import ForHer from "./pages/forher"
-import ForHim from './pages/ForHim';
+import ForHim from './pages/forhim';
 import About from './pages/About';
 import Login from './pages/Login';
 import './App.css';
