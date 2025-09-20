@@ -8,7 +8,7 @@ import IOSCursor from './components/IOSCursor'; // Import iOS Cursor
 import Home from './pages/Home';
 import Products from './pages/Products';
 import ProductDetail from './pages/ProductDetail';
-import ForHer from './pages/ForHer';
+import ForHer from "./pages/ForHer"
 import ForHim from './pages/ForHim';
 import About from './pages/About';
 import Login from './pages/Login';
