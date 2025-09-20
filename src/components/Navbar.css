@@ -1,0 +1,253 @@
+/* Navbar container */
+.navbar {
+  padding: 1rem;
+  position: relative;
+}
+
+/* Container for navbar contents */
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Logo styling */
+.navbar-logo a {
+  color: gray;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.navbar-logo a:hover {
+  color: lightgray;
+}
+
+/* Mobile menu toggle button */
+.navbar-toggle {
+  display: none;
+  flex-direction: column;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.25rem;
+}
+
+.navbar-toggle-icon {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 3px 0;
+  transition: 0.3s;
+}
+
+/* Navigation menu */
+.navbar-menu {
+  display: flex;
+  list-style: none;
+  gap: 1.5rem;
+  margin: 0;
+  padding: 0;
+}
+
+/* Navigation items */
+.navbar-item {
+  margin: 0;
+}
+
+/* Navigation links */
+.navbar-link {
+  color: lightgray;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+  display: block;
+}
+
+.navbar-link:hover {
+  color: lightgray;
+}
+
+.navbar-link-active {
+  color: gray;
+  font-weight: bold;
+  background-color: #4a5568;
+}
+
+/* Cart icon for desktop */
+.navbar-cart {
+  display: block;
+}
+
+.navbar-cart-icon {
+  color: lightgray;
+  text-decoration: none;
+  font-size: 1.5rem;
+  transition: color 0.3s ease;
+}
+
+.navbar-cart-icon:hover {
+  color: lightgray;
+}
+
+/* Cart link for mobile - hidden on desktop */
+.navbar-cart-mobile {
+  display: none;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .navbar-toggle {
+    display: flex;
+  }
+  
+  .navbar-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: #2d3748;
+    flex-direction: column;
+    gap: 0;
+    padding: 1rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    display: none;
+    z-index: 1000;
+  }
+  
+  .navbar-menu-open {
+    display: flex;
+  }
+  
+  .navbar-item {
+    width: 100%;
+  }
+  
+  .navbar-link {
+    padding: 0.75rem 1rem;
+    border-radius: 0;
+    border-bottom: 1px solid #4a5568;
+  }
+  
+  .navbar-cart {
+    display: none;
+  }
+  
+  .navbar-cart-mobile {
+    display: block;
+  }
+}
+a {
+    text-decoration: none;
+    transition: all 0.4s;
+  }
+
+  a:hover {
+    letter-spacing: 4px;
+  }
+  /* Add these styles to your existing Navbar.css */
+
+/* Desktop Cart Button */
+.navbar-cart {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+.cart-button {
+  position: relative;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 6px;
+  transition: background-color 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cart-button:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.cart-icon {
+  width: 24px;
+  height: 24px;
+  color: #333;
+}
+
+.cart-badge {
+  position: absolute;
+  top: -2px;
+  right: -2px;
+  background: #ff4444;
+  color: white;
+  border-radius: 50%;
+  width: 18px;
+  height: 18px;
+  font-size: 11px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+}
+
+/* Mobile Cart Link */
+.cart-link-mobile {
+  background: none;
+  border: none;
+  padding: 0;
+  color: inherit;
+  font-family: inherit;
+  font-size: inherit;
+  cursor: pointer;
+  text-align: left;
+  width: 100%;
+}
+
+.cart-link-mobile:hover {
+  color: #007bff;
+}
+
+/* Hide mobile cart on desktop */
+.navbar-item-mobile-only {
+  display: none;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  /* Show mobile cart link */
+  .navbar-item-mobile-only {
+    display: block;
+  }
+  
+  /* Hide desktop cart on mobile */
+  .navbar-cart {
+    display: none;
+  }
+  
+  /* Adjust navbar container for mobile */
+  .navbar-container {
+    justify-content: space-between;
+  }
+}
+
+/* If you need to adjust existing navbar-menu styles */
+@media (min-width: 769px) {
+  .navbar-menu {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+  }
+  
+  .navbar-container {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+  }
+}
