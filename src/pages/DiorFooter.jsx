@@ -33,7 +33,7 @@ const DiorFooter = ({ onNavigateToContact }) => {
       {/* Newsletter Section */}
       <div className="newsletter-section">
         <h1 className="newsletter-title">
-          Inspire me with all the latest LW news
+          Inspire me with all the latest ARYA news
         </h1>
         
         <div className="newsletter-form">
